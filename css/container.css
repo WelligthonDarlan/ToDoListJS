@@ -1,0 +1,144 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  text-decoration: none;
+  outline: none;
+  border: 0;
+  list-style: none;
+}
+body{
+  background: url(../img/background.png) no-repeat ;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100%;
+  animation: color-change 5s linear infinite;
+  background-color: #003329;
+}
+.container{
+  background-color: #d1d1d1;
+  width: 800px;
+  padding: 20px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  z-index: 1000 !important;
+  position: relative;
+}
+.container div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.input-task{
+  border-radius: 5px;
+  width: 400px;
+  height: 40px;
+  padding: 10px 5px 10px 10px;
+  font-size: 16px;
+}
+img{
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+.task:hover img{
+  opacity: 1;
+}
+.button-add-task{
+  /* background-color: #439e9e; */
+  border: 2px solid #439e9e;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #474747;
+}
+.button-add-task:hover{
+  background-color: #439e9e;
+  color: #fff;
+}
+.list-task{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  gap: 20px;
+}
+.task{
+  font-family: 'Young Serif', serif;
+  background-color: #f2f2f2;
+  box-sizing: 1px 4px 10px rgba(0, 0, 0, 0.2) ;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+  gap: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+}
+.task p{
+  padding: 10px 20px 10px 20px;
+  max-width: 600px; 
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  height: 100%;
+}
+.done{
+  background-color: rgb(60, 189, 60);
+  text-decoration: line-through;
+}
+.rain{
+  animation: color-change 5s linear infinite;
+}
+
+.rain::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/rain.png);
+  animation: rain 0.2s linear infinite;
+  background-attachment: fixed;
+  height: 180vh;
+}
+
+@keyframes rain {
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 10% 1000%;
+  }
+}
+
+.leave04{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/leaves/leave04.png);
+  animation: leave04 10s linear infinite
+}
+@keyframes leave04 {
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 10000% 10%;
+  }
+}

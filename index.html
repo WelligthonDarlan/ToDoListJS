@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./css/container.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
 
-  <link rel="stylesheet" href="style.css">
+    <title>ToDoList JS</title>
+  </head>
 
-  <script src="./script.js" defer></script>
-
-  <title>ToDoList JS</title>
-</head>
-
-<body>
-  <div class="container">
-
-    <div>
-      <input class="input-task" placeholder="O que tenho que fazer..." />
-      <button class="button-add-task">Adicionar</button>
+  <body>
+    <audio preload="auto" loop>
+      <source src="./midia/rain.mp3" type="audio/mpeg" />
+    </audio>
+    
+    <div class="container">
+      <div>
+        <input class="input-task" placeholder="O que tenho que fazer..." />
+        <button class="button-add-task">ADICIONAR</button>
+      </div>
+      <ul class="list-task"></ul>
     </div>
 
-    <ul class="list-task">
-      
-    </ul>
-  </div>
-</body>
+    <div class="rain"></div>
 
+      <div class="leave04"></div>
+  </body>
 </html>
