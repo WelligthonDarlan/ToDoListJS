@@ -38,6 +38,7 @@ body{
   height: 40px;
   padding: 10px 5px 10px 10px;
   font-size: 16px;
+  box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
 img{
   height: 25px;
@@ -57,6 +58,7 @@ img{
   font-weight: 700;
   cursor: pointer;
   color: #474747;
+  box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
 .button-add-task:hover{
   background-color: #439e9e;
@@ -73,7 +75,7 @@ img{
 .task{
   font-family: 'Young Serif', serif;
   background-color: #f2f2f2;
-  box-sizing: 1px 4px 10px rgba(0, 0, 0, 0.2) ;
+  box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.1);
   height: 100%;
   display: flex;
   align-items: center;
@@ -140,7 +142,7 @@ img{
   }
 }
 
-/* ======================MEDIA QUERY========================= */
+/* ======================MEDIA QUERY 360px========================= */
 
 @media screen and (max-width: 360px) {
 
@@ -222,6 +224,342 @@ img{
     }
     100%{
       background-position: 500% 10%;
+    }
+  }
+}
+/* ======================MEDIA QUERY========================= */
+
+@media (min-width: 361px) and (max-width: 480px) {
+
+  body{
+    background: url(../img/background.png) no-repeat ;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  #audio{
+    width: 100%;
+    height: 30px;
+    background-color: #F1F3F4;
+  }
+  .container{
+    background-color: #d1d1d19d;
+    width: 100%;
+    padding: 0px;
+    margin:0px; 
+    border-radius: 0px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.404);
+  }
+  .container div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  .input-task{
+    width: 100%;
+    height: 80px;
+    padding: 1px 5px 1px 10px;
+    font-size: 16px;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+  }
+  .button-add-task{
+    background-color: #439e9e;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .button-add-task:hover{
+    border: 2px solid #439e9e;
+    background-color: transparent;
+    color: #474747;
+  }
+  .list-task{
+    padding: 30px 10px 60px 10px;
+    gap: 10px;
+  }
+  img{
+    filter: drop-shadow(-3px 3px 2px  rgba(0, 0, 0, 0.3));
+    height: 20px;
+    opacity: 1;
+  }
+  .task{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px 5px 10px;
+    gap: 0px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .task p{
+    padding: 5px 10px 5px 10px;
+    max-width: 250px; 
+  }
+  .done{
+    background-color: rgb(60, 189, 60);
+    text-decoration: line-through;
+  }
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 500% 10%;
+    }
+  }
+}
+/* ======================MEDIA QUERY========================= */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  body{
+    background: url(../img/background.png) no-repeat ;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  #audio{
+    width: 100%;
+    height: 30px;
+    background-color: #F1F3F4;
+  }
+  .container{
+    background-color: #d1d1d19d;
+    width: 100%;
+    padding: 0px;
+    margin:0px; 
+    border-radius: 0px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.404);
+  }
+  .container div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  .input-task{
+    width: 100%;
+    height: 80px;
+    padding: 1px 5px 1px 10px;
+    font-size: 16px;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+  }
+  .button-add-task{
+    background-color: #439e9e;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .button-add-task:hover{
+    border: 2px solid #439e9e;
+    background-color: transparent;
+    color: #474747;
+  }
+  .list-task{
+    padding: 30px 10px 60px 10px;
+    gap: 10px;
+  }
+  img{
+    filter: drop-shadow(-3px 3px 2px  rgba(0, 0, 0, 0.3));
+    height: 20px;
+    opacity: 1;
+  }
+  .task{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px 5px 10px;
+    gap: 0px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .task p{
+    padding: 5px 10px 5px 10px;
+    max-width: 250px; 
+  }
+  .done{
+    background-color: rgb(60, 189, 60);
+    text-decoration: line-through;
+  }
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 500% 10%;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  body{
+    background: url(../img/background.png) no-repeat ;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  #audio{
+    width: 100%;
+    height: 30px;
+    background-color: #F1F3F4;
+  }
+  .container{
+    background-color: #d1d1d19d;
+    width: 100%;
+    padding: 0px;
+    margin:0px; 
+    border-radius: 0px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.404);
+  }
+  .container div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  .input-task{
+    width: 100%;
+    height: 80px;
+    padding: 1px 5px 1px 10px;
+    font-size: 16px;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+  }
+  .button-add-task{
+    background-color: #439e9e;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .button-add-task:hover{
+    border: 2px solid #439e9e;
+    background-color: transparent;
+    color: #474747;
+  }
+  .list-task{
+    padding: 30px 10px 60px 10px;
+    gap: 10px;
+  }
+  img{
+    filter: drop-shadow(-3px 3px 2px  rgba(0, 0, 0, 0.3));
+    height: 20px;
+    opacity: 1;
+  }
+  .task{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px 5px 10px;
+    gap: 0px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .task p{
+    padding: 5px 10px 5px 10px;
+    max-width: 250px; 
+  }
+  .done{
+    background-color: rgb(60, 189, 60);
+    text-decoration: line-through;
+  }
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 500% 10%;
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  img{
+    filter: drop-shadow(-3px 3px 2px  rgba(0, 0, 0, 0.3));
+    height: 20px;
+    opacity: 1;
+  }
+
+  
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 500% 10%;
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: -900% 10%;
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: -900% 10%;
+    }
+  }
+}
+@media (min-width: 1601px) and (max-width: 1719px) {
+
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: -5000% 10%;
+    }
+  }
+}
+@media (min-width: 1720px) and (max-width: 1800px) {
+
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: -8000% 10%;
+    }
+  }
+}
+@media (min-width: 1801px) and (max-width: 1850px) {
+
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: -22000% 10%;
+    }
+  }
+}
+@media (min-width: 1851px) and (max-width: 1860px) {
+
+  @keyframes leave04 {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: -120000% 10%;
     }
   }
 }
